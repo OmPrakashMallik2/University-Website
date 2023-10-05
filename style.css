@@ -4,6 +4,38 @@
   font-family: "Poppins", sans-serif;
 }
 
+body, html {
+  padding: 0;
+  margin: 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: linear-gradient(90deg, black, blue);
+  color: white;
+  padding: 10px 50px;
+}
+
+.nav img {
+  width: 180px;
+  height: auto;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  margin-right: 20px;
+}
+
+.nav-links a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* abot */
 .header {
   min-height: 100vh;
   width: 100%;
@@ -11,57 +43,6 @@
   background-position: center;
   background-size: cover;
   position: relative;
-}
-
-.nav {
-  padding: 16px 6px;
-  width: 100%;
-  z-index: 999;
-  background-image: linear-gradient(90deg, black, blue);
-  /* background-color: grey; */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: fixed;
-  top: 0;
-}
-
-.nav img {
-  width: 150px;
-}
-
-.nav-links {
-  padding: 5px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.nav-links ul li {
-  list-style: none;
-  display: inline-block;
-  padding: 8px 12px;
-  position: relative;
-}
-
-.nav-links ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 16px;
-  font-weight: bold;
-}
-
-.nav-links ul li::after {
-  content: "";
-  width: 0%;
-  height: 2px;
-  background: #f44336;
-  display: block;
-  margin: auto;
-  transition: 0.5s;
-}
-
-.nav-links ul li:hover::after {
-  width: 100%;
 }
 
 .text-box {
