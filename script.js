@@ -5,3 +5,15 @@ function showMenu() {
 function hideMenu() {
     navLinks.style.right = "-200px";
 }
+
+
+// notice bar 
+// const noticeBar = document.querySelector('.notice-bar');
+
+// function updateNotice() {
+//     // fetch notice
+//     const newNotice = "new notice update";
+//     noticeBar.querySelector('p').textContent = newNotice;
+// }
+
+// setInterval(updateNotice, 1000);

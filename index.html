@@ -16,26 +16,39 @@
 
 <body>
 
+  <!-- university title -->
+  <section class="title">
+    <img src="images/logo.png" />
+    <h1>The Demo University, Myplace</h1>
+  </section>
+
+  <!-- notice bar -->
+  <section class="notice">
+    <div class="notice-bar">
+      <p>1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, repellendus?</p>
+      <p>2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, repellendus?</p>
+    </div>
+  </section>
+
   <!-- nav -->
   <section class="nav">
-    <div class="logo">
-      <a href="index.html"><img src="images/logo.png" /></a>
-    </div>
     <div class="nav-links" id="navLinks">
       <!-- <i class="fa fa-times" onclick="hideMenu()"></i> -->
-      <a href="">HOME</a>
-      <a href="">ABOUT</a>
-      <a href="">COURSE</a>
-      <a href="">BLOG</a>
-      <a href="">CONTACT</a>
+      <a href="">Home</a>
+      <a href="#about">About Us</a>
+      <a href="">Admissions</a>
+      <a href="#course">Academics</a>
+      <a href="#campus">Campus</a>
+      <a href="">News and Events</a>
+      <a href="">Contact Us</a>
     </div>
     <!-- <i class="fa fa-bars" onclick="showMenu()"></i> -->
   </section>
 
   <!-- about -->
-  <section class="header">
-    <div class="text-box">
-      <h1>World's Biggest University</h1>
+  <section id="about" class="header">
+    <div  class="text-box">
+      <h1>Demo University, Nowhere</h1>
       <p>
         Making website is now one of the easiest thing in the World. You just
         need to learn HTML, CSS, <br />Javascript and are good to go.
@@ -45,10 +58,19 @@
   </section>
 
   <!------course--------->
-  <section class="course">
+  <section id="course" class="course">
     <h1>Courses We Offer</h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
     <div class="row">
+      <div class="course-col">
+        <h3>Intermediate</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. A,
+          necessitatibus ut unde incidunt deleniti explicabo reprehenderit,
+          obcaecati pariatur voluptatem adipisci sequi quidem, iste similique
+          porro facilis maiores aspernatur cum dolorum!
+        </p>
+      </div>
       <div class="course-col">
         <h3>Intermediate</h3>
         <p>
@@ -80,7 +102,7 @@
   </section>
 
   <!------ campus ------>
-  <section class="campus">
+  <section id="campus" class="campus">
     <h1>Our Global Campus</h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
     <div class="row">
