@@ -4,7 +4,8 @@
   font-family: "Poppins", sans-serif;
 }
 
-body, html {
+body,
+html {
   scroll-behavior: smooth;
   padding: 0;
   margin: 0;
@@ -16,43 +17,47 @@ body, html {
   margin: 40px 0;
   padding: 40px 10px;
 }
-
 .notice {
   background-color: rgb(31, 31, 31);
+  overflow: hidden; /* Hide overflow content */
 }
 
 .notice-bar {
   display: flex;
   color: black;
   animation: noticeScroll 20s linear infinite;
+  white-space: nowrap; /* Prevent text from wrapping to the next line */
   /* Adjust animation duration as needed */
 }
 
 .notice-bar p {
-  /* color: rgb(154, 154, 0); */
   color: gold;
   font-weight: bold;
-  /* margin-right: 50px; */
 }
 
 @keyframes noticeScroll {
   0% {
-      transform: translateX(100%);
+    transform: translateX(100%);
   }
 
   100% {
-      transform: translateX(-100%);
+    transform: translateX(-100%);
   }
 }
 
+
 .title {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-image: linear-gradient(180deg, white, whitesmoke, grey, black);
+  padding: 30px 0;
+}
+
+.center {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* background-color: black; */
-  /* background-color: whitesmoke; */
-  background-image: linear-gradient(180deg, white, whitesmoke, grey, black);
-  padding: 30px 0;
 }
 
 .nav {
@@ -66,6 +71,7 @@ body, html {
 .title h1 {
   color: white;
 }
+
 .title img {
   border-radius: 50%;
 
@@ -83,7 +89,8 @@ body, html {
 }
 
 .nav-links a:hover {
-  text-decoration: underline; /* Underline on hover */
+  text-decoration: underline;
+  /* Underline on hover */
 }
 
 /* abuot */
@@ -244,6 +251,7 @@ h3 {
 .campus h1 {
   padding-top: 70px;
 }
+
 .campus p {
   color: black;
 }
@@ -271,7 +279,7 @@ h3 {
 }
 
 .layer:hover {
-  background: rgba(0, 72, 226, 0.7);
+  background: rgba(0, 0, 255, 0.5);
   /* background: rgba(226, 0, 0, 0.7); */
 }
 
@@ -395,7 +403,7 @@ h3 {
   max-width: 100%;
   background-image: linear-gradient(90deg, black, rgb(0, 0, 120));
   padding: 70px 10%;
-} 
+}
 
 .aboutus {
   margin-left: 12px;
@@ -421,10 +429,11 @@ h3 {
   /* transition: 0.4s; */
 }
 
-.aboutus a:hover{
+.aboutus a:hover {
   font-weight: bold;
   text-decoration: underline;
 }
+
 .footer p {
   color: white;
   font-size: small;
@@ -439,7 +448,7 @@ h3 {
   padding: 5px 0;
 }
 
-.copyright{
+.copyright {
   /* background-color: green; */
   background-color: rgb(40, 40, 40);
   text-align: center;
@@ -447,6 +456,7 @@ h3 {
   display: flex;
   justify-content: space-evenly;
 }
+
 .copyright p {
   color: white;
 }
