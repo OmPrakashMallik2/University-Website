@@ -11,27 +11,50 @@ html {
   margin: 0;
 }
 
+#btnx:hover {
+  color: #DDDBCB;
+  background-color: #008080;
+  /* text-decoration: underline; */
+}
+
+#btnx {
+  /* justify-content: center; */
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: center;
+  align-items: center;
+  border: none;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #008080b1;
+  color: #050505;
+}
+
 .container {
   min-height: 100vh;
   width: 100%;
   margin: 40px 0;
   padding: 40px 10px;
 }
+
 .notice {
   background-color: rgb(31, 31, 31);
-  overflow: hidden; /* Hide overflow content */
+  overflow: hidden;
+  /* Hide overflow content */
 }
 
 .notice-bar {
   display: flex;
-  color: black;
+  color: #050505;
   animation: noticeScroll 20s linear infinite;
-  white-space: nowrap; /* Prevent text from wrapping to the next line */
+  white-space: nowrap;
+  /* Prevent text from wrapping to the next line */
   /* Adjust animation duration as needed */
 }
 
 .notice-bar p {
-  color: gold;
+  color: #008080;
   font-weight: bold;
 }
 
@@ -46,12 +69,23 @@ html {
 }
 
 
+.title h2 {
+  color: #050505;
+  /* color: red; */
+}
+
 .title {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-image: linear-gradient(180deg, white, whitesmoke, grey, black);
+  /* background-image: linear-gradient(180deg, white, whitesmoke, grey, black); */
+  background-color: #DDDBCB;
+  color: #050505;
   padding: 30px 0;
+}
+
+.title .center h1 {
+  color: #008080;
 }
 
 .center {
@@ -63,7 +97,8 @@ html {
 .nav {
   position: sticky;
   top: 0;
-  background-image: linear-gradient(90deg, black, rgb(0, 0, 120));
+  /* background-image: linear-gradient(90deg, black, rgb(0, 0, 120)); */
+  background-color: #008080;
   padding: 15px 0;
   z-index: 999;
 }
@@ -83,7 +118,7 @@ html {
 }
 
 .nav-links a {
-  color: white;
+  color: #DDDBCB;
   text-decoration: none;
   font-weight: 600;
 }
@@ -97,7 +132,8 @@ html {
 .header {
   min-height: 100vh;
   width: 100%;
-  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/banner.png);
+  background-image: linear-gradient(#050505, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), #050505), url(images/banner.png);
+  /* background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/banner.png); */
   background-position: center;
   background-size: cover;
   position: relative;
@@ -116,31 +152,36 @@ html {
 
 .text-box h1 {
   font-size: 62px;
+  color: #DDDBCB;
+  text-shadow: 4px 6px 3px #050505;
 }
 
 .text-box p {
+  /* text-shadow: 2px 2px 2px #050505; */
   margin: 10px 0 40px;
   font-size: 14px;
-  color: #fff;
+  color: #050505;
 }
 
-.hero-btn {
+/* .hero-btn {
   display: inline-block;
   text-decoration: none;
   color: #fff;
   border: 1px solid #fff;
-  padding: 12px 34px;
+  border-radius: 10px;
+  padding: 16px 40px;
   font-size: 13px;
+  font-weight: bold;
   background: transparent;
   position: relative;
   cursor: pointer;
 }
 
 .hero-btn:hover {
-  border: 1px solid #f44336;
-  background: #f44336;
-  transition: 1s;
-}
+  border: 1px solid #008080;
+  background: #050505;
+  transition: 0.5s;
+} */
 
 nav .fa {
   display: none;
@@ -157,7 +198,7 @@ nav .fa {
 
   .nav-links {
     position: absolute;
-    background: #f44336;
+    background: #050505;
     min-height: 100vh;
     width: 200px;
     top: 0;
@@ -181,6 +222,25 @@ nav .fa {
 }
 
 /*------- course --------*/
+
+.bg1 {
+  /* background-color: rgb(255, 255, 255); */
+  background-color: #050505;
+}
+
+.bg2 {
+  background-color: #DDDBCB;
+}
+
+.bg3 {
+  background-color: #050505;
+}
+
+.bg4 {
+  /* background-color: rgb(63, 63, 63); */
+  background-color: #DDDBCB;
+}
+
 .course {
   width: 80%;
   min-height: 100vh;
@@ -189,8 +249,9 @@ nav .fa {
   padding-top: 90px;
 }
 
-.course-p {
-  color: black;
+.course h1,
+p {
+  color: #DDDBCB;
 }
 
 h1 {
@@ -199,7 +260,7 @@ h1 {
 }
 
 p {
-  color: #777;
+  color: #050505;
   font-size: 14px;
   font-weight: 300;
   line-height: 22px;
@@ -214,12 +275,18 @@ p {
 
 .course-col {
   flex-basis: 32%;
-  background: #fff3f3;
+  background: #DDDBCB;
   border-radius: 10px;
   margin-bottom: 30px;
   padding: 20px 12px;
   box-sizing: border-box;
   transition: 00.5s;
+}
+
+.course-col p,
+h3 {
+  text-align: justify;
+  color: #050505;
 }
 
 h3 {
@@ -229,7 +296,7 @@ h3 {
 }
 
 .course-col:hover {
-  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 20px 0px #DDDBCB;
 }
 
 @media (max-width: 700px) {
@@ -250,10 +317,11 @@ h3 {
 
 .campus h1 {
   padding-top: 70px;
+  color: #050505;
 }
 
 .campus p {
-  color: black;
+  color: #050505;
 }
 
 .campus-col {
@@ -279,14 +347,29 @@ h3 {
 }
 
 .layer:hover {
-  background: rgba(0, 0, 255, 0.5);
+  background: #050505be;
   /* background: rgba(226, 0, 0, 0.7); */
+}
+
+.layer button {
+  color: #fff;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.layer:hover button {
+  bottom: 25%;
+  opacity: 1;
 }
 
 .layer h3 {
   width: 100;
   font-weight: 500;
-  color: #fff;
+  color: #DDDBCB;
   font-size: 26px;
   bottom: 0;
   left: 50%;
@@ -309,8 +392,14 @@ h3 {
   padding-top: 100px;
 }
 
-.facilities p {
-  color: black;
+.facilities h3 {
+  color: #008080;
+}
+
+.facilities h1,
+p {
+  /* color: #008080; */
+  color: #DDDBCB;
 }
 
 .facilities-col {
@@ -345,8 +434,13 @@ h3 {
   text-align: center;
 }
 
-.testimonials p {
-  color: black;
+.testimonials h3 {
+  color: #008080;
+}
+
+.testimonials p,
+h1 {
+  color: #050505;
 }
 
 .row {
@@ -383,7 +477,7 @@ h3 {
 }
 
 .testimonial-col .fa {
-  color: #f44336;
+  color: #050505;
 }
 
 
@@ -396,12 +490,13 @@ h3 {
 }
 
 .footer {
-  color: white;
+  color: #DDDBCB;
   display: flex;
   justify-content: space-between;
   text-align: center;
   max-width: 100%;
-  background-image: linear-gradient(90deg, black, rgb(0, 0, 120));
+  /* background-image: linear-gradient(90deg, black, rgb(0, 0, 120)); */
+  background-color: #050505;
   padding: 70px 10%;
 }
 
@@ -421,7 +516,8 @@ h3 {
 
 .aboutus a {
   font-size: small;
-  color: white;
+  /* color: white; */
+  color: #DDDBCB;
   text-decoration: none;
   display: flex;
   margin-left: 12px;
@@ -435,7 +531,8 @@ h3 {
 }
 
 .footer p {
-  color: white;
+  color: #DDDBCB;
+  /* color: white; */
   font-size: small;
   /* line-height: 1.5; */
   /* word-spacing: 6px; */
@@ -458,5 +555,6 @@ h3 {
 }
 
 .copyright p {
-  color: white;
+  color: #DDDBCB;
+  /* color: white; */
 }
